@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Label form</title>
+    <style>
+        .inline {
+            display: inline-block;
+        }
+        
+        label {
+            margin: 10px;
+            display: block;
+        }
+        
+        fieldset {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Plese fill the following form</h1>
+        <form>Name:<input id="name" type="text" placeholder="Input your name"></form>
+    </header>
+    <main>
+        <section>
+
+            <h3>Fill Your Information Below</h3>
+            <form>
+                <label class="inline" for=" name">First Name:</label>
+                <input id="name" type="text " placeholder="Input your first name ">
+            </form>
+            <form>
+                <label class="inline" for=" ">Last Name:</label> <input input="name " type=" text " Placeholder="Input Your Last Name "></form>
+            <form>
+                <label class="inline" for="Your Phone ">Your phone:</label> <input input="name " type=" text " Placeholder="Input Your Last Name ">
+                <p>This is notified for you to fill the above form with right information. Provide right information in the form otherwise you will not receive any help from us.There is a form below. You have to fill the form too.</p>
+                <fieldset>
+                    <legend>Personal Interest</legend>
+                    <h3>You can select only one option</h3>
+                    <label for="exercise">
+                         <input type="radio" name="one option" id="exercise"> Exercise</label>
+
+
+                    <label for="social relationship">
+                         <input type="radio" name="one option" id="social relationship"> Social Relationship</label>
+
+
+                    <label for="love">
+                         <input type="radio" name="one option" id="love"> Love</label>
+
+
+                </fieldset> <br>
+
+
+                <fieldset>
+                    <legend>Improve Your Productivity</legend>
+                    <h4>You can select multiple option</h4>
+                    <label for="running">
+                        <input type="checkbox" name="multiple" id="running">Running</label>
+                    <label for="simming">
+                        <input type="checkbox" name="multiple" id="">Swimming</label>
+                    <label for="joging"><input type="checkbox" name="multiple" id="">Jogging</label></fieldset>
+                <fieldset>
+                    <legend style="color:red;">Special Insturction</legend>
+                    <h4>Here I have add textarea tag for the below box</h4><textarea name="" id="" cols="30" rows="5">Fill up every single detail carefull. If you have children you are not eligilbe.If you cannot pay in time you will be discolified.</textarea>
+                </fieldset>
+                <input type="submit" value="Submit"> <input type="reset" value="Reset form">
+
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table related</title>
+    <style>
+        table {
+            border-color: darkblue;
+            border-collapse: collapse;
+        }
+        
+        th {
+            border: 1px solid green;
+        }
+        
+        td {
+            text-align: center;
+            border: 1px solid green;
+        }
+        
+        nav>ul {
+            display: flex;
+        }
+        
+        nav li {
+            margin-right: 10px;
+            padding: 5px;
+            list-style: none;
+        }
+        
+        nav li :hover {
+            border-radius: 5px;
+            background-color: palegreen;
+            ;
+        }
+        
+        nav li a {
+            text-decoration: none;
+        }
+        
+        nav li .dropdown {
+            display: none;
+            position: absolute;
+            background-color: darkgoldenrod;
+            border-radius: 5px;
+            padding-left: 10px;
+        }
+        
+        nav li:hover .dropdown {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!--h headerTable er modhe 3 Ta Tag thak te pare.1.thead,2tbody,3.tfooter-->
+
+    <table>
+        <h1>Html Table</h1>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Company</th>
+                <th>Salary</th>
+            </tr>
+
+        </thead>
+        <header>
+            <nav>
+                <!--ul.er ...list ke ek line e ante {display:flex;}-->
+                <ul>
+                    <li>
+                        <a href="1-video.audio.embeded,iframe.html">Video & Audio</a>
+                    </li>
+
+                    <li>
+                        <a href="2-nav,main, header,footer,section,article, time.html">Navigation</a>
+                        <section>
+                            <ul class="dropdown">
+                                <li>
+                                    <a href="1-video.audio.embeded,iframe.html">Video & Audio</a>
+                                </li>
+
+                                <li>
+                                    <a href="2-nav,main, header,footer,section,article, time.html">Navigation</a></li>
+                                <li>
+                                    <a href="3-form label fieldset legend radio checkbox textarea reset submit.html">Form</a>
+                                </li>
+                                <li>
+                                    <a href="../My-first-github-repo/index.html">GitHub Repo</a>
+                                </li>
+                            </ul>
+                        </section>
+                    </li>
+                    <li>
+                        <a href="3-form label fieldset legend radio checkbox textarea reset submit.html">Form</a>
+                    </li>
+                    <li>
+                        <a href="../My-first-github-repo/index.html">GitHub Repo</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </header>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Bill Gtes</td>
+                <td>Microsoft</td>
+                <td>1T</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Elon Mask</td>
+                <td>SpaceX</td>
+                <td>1B</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mark Zukarbarg</td>
+                <td>FAcebook</td>
+                <td>1B</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Lary page</td>
+                <td>Google</td>
+                <td>1T</td>
+            </tr>
+            <tr></tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan=" 4 "> this is tfooter :tfoot tag>tr>td></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
